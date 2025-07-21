@@ -1,0 +1,91 @@
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 579px;
+    background-color: #030039;
+}
+
+
+.title-cat {
+    padding: 20px 0 45px;
+    font-size: 56px;
+    font-weight: 400;
+    color: white;
+}
+
+
+.category-container {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    gap: 0 200px;
+}
+
+.card {
+    background-color: antiquewhite;
+    height: 400px;
+    width: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow:5px 10px #888888 ;
+
+}
+
+.card h1 {
+    font-size: 40px;
+}
+
+
+.card .bars {
+    
+    position: relative;
+    background-color: black;
+    height: 1px;
+    width: 90px;
+}
+
+.card h2 {
+    padding: 10px 0 12px;
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.btn-cat {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.btn-cat a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #1B3C53;
+    text-decoration: none;      
+    color: white;
+    font-size: 12px;
+    height: 35px;
+    width: 120px;
+    border-radius: 12px; 
+    font-weight: 400;
+}
+
+.btn-cat a:hover {
+    transition: .5s ease-in-out ;
+    background-color: white;
+    color: #1B3C53;
+    font-weight: 600;
+}

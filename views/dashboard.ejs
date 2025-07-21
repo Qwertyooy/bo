@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runventure </title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <div class="con">
+    <div class="container">
+    <h1>Dashboard</h1>
+    <h5>hi <%= user.name %>  </h5>
+    <div class="paraf">
+    <p>register at </p>
+    <p>-<%= new Date (user.date).toISOString().slice(0,10) %>-</p>
+    <p>age : <%= user.age %></p>
+    </div>
+    <p>your competition start at</p>
+
+    <div class="countdown-container">
+        <div id="countdown" class="countdown">
+            <div class="countdown-item">
+                <span id="days" class="value">00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="countdown-item">
+                <span id="hours" class="value">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="countdown-item">
+                <span id="minutes" class="value">00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="countdown-item">
+                <span id="seconds" class="value">00</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+    
+    </div>
+    </div>
+    </div>
+</div>
+    
+
+    <div class="logout">
+    <form action="/auth/logout">
+    <button href="" type="submit">LOG OUT</button>
+    </form>
+    </div>
+    <script src="/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" method="POST" action="/auth/login">
+            <h2>Login ke Akun Anda</h2>
+            <% if (typeof message !== 'undefined' && message !== null) { %>
+                <h4 class=".message.error"><%= message %></h4>
+            <% } %> 
+            <div class="input-group">
+                <label for="usernameLog">Nama Pengguna / Email</label>
+                <input type="text" name="usernameLog" required>
+            </div>
+            <div class="input-group">
+                <label for="passwordLog">Kata Sandi</label>
+                <input type="password" name="passwordLog" required>
+            </div>
+            <button type="submit" >Login</button>
+            <p class="switch-form">Belum punya akun? <a href="/register">Daftar di sini</a></p>
+            <p id="loginMessage" class="message"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
